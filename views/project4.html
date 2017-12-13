@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="../dist/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/edits.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intuit Accounts - Sign Up</title>
 </head>
 <body>
 <div class="text-right">
-    <div><p><a class="button float-right">Sign in</a>Already have an Intuit account? <br><a class="small" href="#">I forgot my user ID and password</a></p></div>
+    <div><p><a class="button float-right" id="corner" style="border: solid black 1px"><img src="../images/lock.png" alt="lock">Sign in</a>Already have an Intuit account? <br><a class="small" href="#">I forgot my user ID and password</a></p></div>
 </div>
 
-<div class="text-center">
+<div id="intuit"><img src="../images/intuit.svg"></div>
+
+<div class="text-center" id="rectangle">
+    <div id="ya-this-thing">
+        <img src="../images/intuit-things.png">
+    </div>
+    <hr>
     <div class="account">
         <h1>One Account. <br> Everything Intuit.</h1>
-        <p>Create an account for all of Intuit's products <br> Including Mint. <a>Learn More</a></p>
+        <p>Create an account for all of Intuit's products <br> Including Mint. <a class="underline">Learn More</a></p>
     </div>
 <form>
     <div>
@@ -26,30 +34,30 @@
     </div>
     <div>
         <label>Password</label>
-        <input>
+        <input id="unlock">
+
         <p>Standard call, messaging or data rates may apply.</p>
     </div>
 
-    <div class="button small"><p>Create Account</p></div>
+    <div class="button small shadow" id="wide" ><img src="../images/lock.png" alt="lock"><p>Create Account</p></div>
     <div>
-        By clicking Create Account, you agree to our
-        <a href="#">License Agreement</a> and <a href="#">Privacy Statement</a>
+        By clicking Create Account, you agree to our <br>
+        <a class="underline" href="#">License Agreement</a> and <a class="underline" href="#">Privacy Statement</a>
     </div>
 </form>
-<footer>
-    <div>
+</div>
 
-    </div>
-    <div>
+<div id="intuit2"><img src="../images/intuit.svg" alt="intuit"></div>
+<footer>
+    <div class="text-center">
+        <a class="black underline">Legal</a> <a class="black underline">Privacy</a> <a class="black underline">Security</a>
         <p>
-            Legal  Privacy  Security <br>
+
             © 2017 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered
             trademarks of Intuit Inc. <br>
             Terms and conditions, features, support, pricing, and service options subject to change without notice.
         </p>
     </div>
 </footer>
-</div>
-
 </body>
 </html>
